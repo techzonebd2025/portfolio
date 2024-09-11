@@ -1,0 +1,61 @@
+import React from "react";
+
+const FacebookProfileClone = () => {
+  return (
+    <div className="facebook-profile-clone">
+      {/* Profile Header */}
+      <div className="profile-header">
+        <img src="your-profile-picture-url" alt="Chitron Bhattacharjee" className="profile-picture" />
+        <div className="profile-info">
+          <h1>Chitron Bhattacharjee</h1>
+          <p>AI Developer, Programmer, and Writer</p>
+          {/* Buttons */}
+          <div className="profile-buttons">
+            <a href="https://www.facebook.com/brandchitron" className="btn add-friend">Add Friend</a>
+            <a href="https://m.me/brandchitron" className="btn message">Message</a>
+            <a href="https://brandchitron.github.io/biograph/" className="btn more-options">...</a>
+          </div>
+        </div>
+      </div>
+
+      {/* About Section */}
+      <div className="about-section">
+        <h2>About Me</h2>
+        <p>
+          I'm Chitron Bhattacharjee, an AI developer and programmer from Bangladesh, currently studying science at Mymensingh College. 
+          I'm the creator of the Oii Shunoo app and the ShiPu Bot chatbot. I enjoy combining technology with creativity, developing 
+          apps, websites, and writing poetry and stories that reflect on societal issues. Passionate about learning and innovation, 
+          I aim to make a positive impact through my work.
+        </p>
+        <p>
+          Learn more about me: <a href="https://brandchitron.github.io/biograph/">Biography</a>
+        </p>
+      </div>
+
+      {/* Contact Section */}
+      <div className="contact-section">
+        <h2>Contact Information</h2>
+        <ul>
+          <li>Email: chitronbhattacharjee@gmail.com</li>
+          <li>Phone: 01316655254, 01945971168</li>
+          <li>WhatsApp: +8801316655254</li>
+        </ul>
+      </div>
+
+      {/* Posts Section */}
+      <div className="posts-section">
+        <h2>Posts About Chitron Bhattacharjee</h2>
+        <div className="post">
+          <p>
+            Chitron Bhattacharjee is a talented AI developer and programmer from Bangladesh. Known for his creativity in developing apps 
+            like Oii Shunoo and ShiPu Bot, he is also a passionate writer who focuses on themes of societal issues, national oppression, 
+            and personal resilience. Connect with Chitron via email at chitronbhattacharjee@gmail.com, or call him at 01316655254 or 
+            01945971168. WhatsApp: +8801316655254.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FacebookProfileClone;
