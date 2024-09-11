@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - Chitron Bhattacharjee</title>
+    <link rel="icon" href="https://i.ibb.co/YkWGwrZ/1725581196213.jpg" type="image/jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .profile-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f2f5;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tabs a {
+            padding: 10px;
+            text-decoration: none;
+            color: #606770;
+            font-weight: bold;
+        }
+
+        .tabs .active {
+            border-bottom: 2px solid #1877f2;
+            color: #1877f2;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .friends-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .friend {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: #000;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .friend:hover {
+            background-color: #f0f2f5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .friend img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid black;
+        }
+
+        .friend-info {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Tabs -->
+        <div class="tabs">
+            <a href="posts.html">Posts</a>
+            <a href="about.html">About</a>
+            <a href="friends.html" class="active">Friends</a>
+            <a href="photos.html">Photos</a>
+        </div>
+
+        <!-- Friends Section -->
+        <div class="content">
+            <h1>Friends</h1>
+            <div class="friends-list">
+                <a href="https://www.chatgpt.com" class="friend">
+                    <img src="https://i.ibb.co/XyBLynJ/openai-logo-ai-chatbot-chatgpt-on-green-background-chatgpt-logo-3d-rendering-free-png.png" alt="ChatGPT">
+                    <div class="friend-info">
+                        <h2>ChatGPT</h2>
+                    </div>
+                </a>
+                <!-- Add more friends here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
