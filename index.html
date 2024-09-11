@@ -7,27 +7,131 @@
     <link rel="icon" href="https://i.ibb.co/YkWGwrZ/1725581196213.jpg" type="image/jpeg">
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Additional CSS for specific adjustments */
         .verified-badge {
-            width: 18px; /* Increased width */
-            height: 18px; /* Height kept the same */
+            width: 18px; /* Adjust width as needed */
+            height: 18px;
             vertical-align: middle;
             margin-left: 5px;
         }
 
-        .post-image {
+        .profile-header {
+            position: relative;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .cover-photo {
             width: 100%;
-            height: 100%; /* Ensure the height matches the content */
-            background-size: cover; /* Cover the entire area */
-            background-position: center; /* Center the image */
+            height: 200px;
+            background-image: url('https://i.ibb.co/LY1111L/1725581111820.jpg');
+            background-size: cover;
+            background-position: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .profile-info {
+            position: relative;
+            top: -50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+            background-color: #eee;
+        }
+
+        h1 {
+            margin: 10px 0 5px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #1877f2;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f2f5;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tabs a {
+            padding: 10px;
+            text-decoration: none;
+            color: #606770;
+            font-weight: bold;
+        }
+
+        .tabs .active {
+            border-bottom: 2px solid #1877f2;
+            color: #1877f2;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .intro, .post {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .post-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
         }
 
         .post-header h4 {
-            display: inline-block;
             margin: 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
         }
 
         .post-header p {
             margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .post-image {
+            width: 100%;
+            height: 200px; /* Ensures the height matches the content */
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            margin-top: 10px;
+            background-color: #ccc; /* Default background color if image is not loaded */
         }
     </style>
 </head>
@@ -35,7 +139,7 @@
     <div class="profile-container">
         <!-- Profile Header -->
         <div class="profile-header">
-            <div class="cover-photo" style="background-image: url('https://i.ibb.co/LY1111L/1725581111820.jpg');"></div>
+            <div class="cover-photo"></div>
             <div class="profile-info">
                 <img src="https://i.ibb.co/YkWGwrZ/1725581196213.jpg" alt="Profile Picture" class="profile-picture">
                 <h1>CHITRON BHATTACHARJEE <img src="https://i.ibb.co/cYfZ8k4/images-3.jpg" alt="Verified Badge" class="verified-badge"></h1>
