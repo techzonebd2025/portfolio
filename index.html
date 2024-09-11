@@ -1,61 +1,179 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitron Bhattacharjee - Professional Portfolio</title>
+    <link rel="icon" href="https://i.ibb.co/YkWGwrZ/1725581196213.jpg" type="image/jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
 
-const FacebookProfileClone = () => {
-  return (
-    <div className="facebook-profile-clone">
-      {/* Profile Header */}
-      <div className="profile-header">
-        <img src="your-profile-picture-url" alt="Chitron Bhattacharjee" className="profile-picture" />
-        <div className="profile-info">
-          <h1>Chitron Bhattacharjee</h1>
-          <p>AI Developer, Programmer, and Writer</p>
-          {/* Buttons */}
-          <div className="profile-buttons">
-            <a href="https://www.facebook.com/brandchitron" className="btn add-friend">Add Friend</a>
-            <a href="https://m.me/brandchitron" className="btn message">Message</a>
-            <a href="https://brandchitron.github.io/biograph/" className="btn more-options">...</a>
-          </div>
+        .profile-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
+            position: relative;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .cover-photo {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .profile-info {
+            position: relative;
+            top: -50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+            background-color: #eee;
+        }
+
+        h1 {
+            margin: 10px 0 5px;
+            font-size: 24px;
+        }
+
+        .profile-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #1877f2;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f2f5;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tabs a {
+            padding: 10px;
+            text-decoration: none;
+            color: #606770;
+            font-weight: bold;
+        }
+
+        .tabs .active {
+            border-bottom: 2px solid #1877f2;
+            color: #1877f2;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .intro, .post {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .post-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .post-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <div class="cover-photo"></div>
+            <div class="profile-info">
+                <img src="https://i.ibb.co/YkWGwrZ/1725581196213.jpg" alt="Profile Picture" class="profile-picture">
+                <h1>Chitron Bhattacharjee</h1>
+                <p>1.5K friends</p>
+                <div class="profile-buttons">
+                    <a href="https://www.facebook.com/brandchitron" class="btn">Add Friend</a>
+                    <a href="https://m.me/brandchitron" class="btn">Message</a>
+                    <a href="https://brandchitron.github.io/biograph/" class="btn">...</a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      {/* About Section */}
-      <div className="about-section">
-        <h2>About Me</h2>
-        <p>
-          I'm Chitron Bhattacharjee, an AI developer and programmer from Bangladesh, currently studying science at Mymensingh College. 
-          I'm the creator of the Oii Shunoo app and the ShiPu Bot chatbot. I enjoy combining technology with creativity, developing 
-          apps, websites, and writing poetry and stories that reflect on societal issues. Passionate about learning and innovation, 
-          I aim to make a positive impact through my work.
-        </p>
-        <p>
-          Learn more about me: <a href="https://brandchitron.github.io/biograph/">Biography</a>
-        </p>
-      </div>
-
-      {/* Contact Section */}
-      <div className="contact-section">
-        <h2>Contact Information</h2>
-        <ul>
-          <li>Email: chitronbhattacharjee@gmail.com</li>
-          <li>Phone: 01316655254, 01945971168</li>
-          <li>WhatsApp: +8801316655254</li>
-        </ul>
-      </div>
-
-      {/* Posts Section */}
-      <div className="posts-section">
-        <h2>Posts About Chitron Bhattacharjee</h2>
-        <div className="post">
-          <p>
-            Chitron Bhattacharjee is a talented AI developer and programmer from Bangladesh. Known for his creativity in developing apps 
-            like Oii Shunoo and ShiPu Bot, he is also a passionate writer who focuses on themes of societal issues, national oppression, 
-            and personal resilience. Connect with Chitron via email at chitronbhattacharjee@gmail.com, or call him at 01316655254 or 
-            01945971168. WhatsApp: +8801316655254.
-          </p>
+        <!-- Tabs -->
+        <div class="tabs">
+            <a href="#" class="active">Posts</a>
+            <a href="#">About</a>
+            <a href="#">Friends</a>
+            <a href="#">Photos</a>
         </div>
-      </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Intro Section -->
+            <div class="intro">
+                <h3>Intro</h3>
+                <p>Followed by 2.5M people</p>
+                <p>Lives in Durgapur, Netrokona</p>
+                <p>Contact: 01316655254, 01945971168</p>
+                <p>Email: chitronbhattacharjee@gmail.com</p>
+                <p>WhatsApp: +8801316655254</p>
+            </div>
+
+            <!-- Posts Section -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="https://i.ibb.co/YkWGwrZ/1725581196213.jpg" alt="Profile Picture">
+                    <div>
+                        <h4>Chitron Bhattacharjee</h4>
+                        <p>2 hours ago</p>
+                    </div>
+                </div>
+                <p>Enjoying a beautiful day in Central Park! 🌳☀️ #NYCLife</p>
+                <div class="post-image"></div>
+            </div>
+        </div>
     </div>
-  );
-};
-
-export default FacebookProfileClone;
+</body>
+</html>
