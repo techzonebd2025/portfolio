@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos - Chitron Bhattacharjee</title>
+    <link rel="icon" href="https://i.ibb.co/YkWGwrZ/1725581196213.jpg" type="image/jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .profile-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f2f5;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tabs a {
+            padding: 10px;
+            text-decoration: none;
+            color: #606770;
+            font-weight: bold;
+        }
+
+        .tabs .active {
+            border-bottom: 2px solid #1877f2;
+            color: #1877f2;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Tabs -->
+        <div class="tabs">
+            <a href="posts.html">Posts</a>
+            <a href="about.html">About</a>
+            <a href="friends.html">Friends</a>
+            <a href="photos.html" class="active">Photos</a>
+        </div>
+
+        <!-- Photos Section -->
+        <div class="content">
+            <h1>Photos</h1>
+            <div class="photo-gallery">
+                <img src="https://i.ibb.co/YkWGwrZ/1725581196213.jpg" alt="Profile Picture">
+                <img src="https://i.ibb.co/LY1111L/1725581111820.jpg" alt="Cover Photo">
+                <img src="https://i.ibb.co/vXsyK8F/1725581350377.jpg" alt="Birthday Post Image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
