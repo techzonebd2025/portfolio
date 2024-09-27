@@ -1,127 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Chitron Bhattacharjee</title>
-    <link rel="icon" href="https://i.ibb.co/YkWGwrZ/1725581196213.jpg" type="image/jpeg">
+    <title>চিত্রণ ভট্টাচার্য - উইকিপিডিয়া</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Changed font to match Wikipedia */
+            line-height: 1.6;
             color: #202122;
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 16px;
+            background-color: #f8f9fa;
         }
-
-        #content {
-            width: 75%;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #a2a9b1;
         }
-
-        #header {
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 10px;
+        h1, h2, h3 {
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 5px;
+        }
+        .infobox {
+            border: 1px solid #a2a9b1;
+            background-color: #f8f9fa;
+            padding: 10px;
             margin-bottom: 20px;
         }
-
-        #header a {
-            color: #0645ad;
-            text-decoration: none;
+        .infobox table {
+            width: 100%;
         }
-
-        #header a:hover {
-            text-decoration: underline;
+        .infobox th {
+            text-align: left;
+            vertical-align: top;
+            padding-right: 10px;
         }
-
-        #language-selector {
+        .section {
             margin-bottom: 20px;
         }
-
-        #language-selector button {
-            background: #f1f1f1;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 5px 10px;
+        .section h2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             cursor: pointer;
         }
-
-        #language-selector button:hover {
-            background: #e0e0e0;
+        .section-content {
+            display: none;
         }
-
-        h1, h2 {
-            margin-top: 0;
+        .section-content.active {
+            display: block;
         }
-
-        .infobox {
-            border: 1px solid #aaa;
-            border-radius: 5px;
-            background: #f9f9f9;
-            padding: 10px;
-            margin: 10px 0;
-        }
-
-        .infobox h2 {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        .infobox p {
-            margin: 5px 0;
-        }
-
-        #footer {
-            margin-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            padding-top: 10px;
-            text-align: center;
-            font-size: 14px;
-            color: #707070;
-        }
-
-        #footer a {
-            color: #0645ad;
+        .edit-link {
+            font-size: 0.8em;
+            color: #3366cc;
             text-decoration: none;
+            float: right;
         }
-
-        #footer a:hover {
-            text-decoration: underline;
+        #footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #a2a9b1;
+        }
+        #footer a {
+            text-decoration: none;
+            color: #3366cc;
         }
     </style>
-    <script>
-        function switchLanguage(lang) {
-            if (lang === 'bn') {
-                document.getElementById('bio').innerHTML = 'চিত্রণ ভট্টাচার্য। বাংলা ভাষায় আপনার জীবনী এখানে লিখুন।';
-                document.getElementById('about-header').innerHTML = 'আমার সম্পর্কে';
-            } else {
-                document.getElementById('bio').innerHTML = 'Chitron Bhattacharjee. Your biography in English goes here.';
-                document.getElementById('about-header').innerHTML = 'About Me';
-            }
-        }
-    </script>
 </head>
 <body>
-    <div id="content">
-        <div id="header">
-            <a href="index.html"><strong>Chitron Bhattacharjee</strong></a>
-            <span id="language-selector">
-                <button onclick="switchLanguage('en')">English</button> | 
-                <button onclick="switchLanguage('bn')">বাংলা</button>
-            </span>
+    <header>
+        <div>☰</div>
+        <h1>উইকিপিডিয়া</h1>
+        <div>🔍</div>
+    </header>
+
+    <main>
+        <h1>চিত্রণ ভট্টাচার্য</h1>
+        <div>
+            <span>⭐</span>
+            <a href="#" class="edit-link">সম্পাদনা</a>
         </div>
-        <h1 id="about-header">About Me</h1>
+
+        <p>
+            চিত্রণ ভট্টাচার্য (জন্ম ১৩ অক্টোবর, ২০০৫) একজন বাংলাদেশী এআই ডেভেলপার, প্রোগ্রামার এবং ছাত্র, যিনি সাইবারসিকিউরিটি, এআই ডেভেলপমেন্ট এবং প্রোগ্রামিংয়ে তার কাজের জন্য পরিচিত।
+        </p>
+
         <div class="infobox">
-            <h2>Biography</h2>
-            <p id="bio">Chitron Bhattacharjee is a Bangladeshi AI developer and programmer, studying science in the eleventh grade at Mymensingh College. He is also learning computer programming alongside his studies.</p>
+            <h2>চিত্রণ ভট্টাচার্য</h2>
+            <table>
+                <tr>
+                    <th>জন্ম</th>
+                    <td>১৩ অক্টোবর ২০০৫ (বয়স ১৮)<br>দুর্গাপুর, নেত্রকোণা, বাংলাদেশ</td>
+                </tr>
+                <tr>
+                    <th>জাতীয়তা</th>
+                    <td>বাংলাদেশী</td>
+                </tr>
+                <tr>
+                    <th>অন্যান্য নাম</th>
+                    <td>চিত্রণ ভট্টাচার্য (আসি)</td>
+                </tr>
+                <tr>
+                    <th>শিক্ষা</th>
+                    <td>বিজ্ঞান ছাত্র, একাদশ শ্রেণী,<br>ময়মনসিংহ কলেজ</td>
+                </tr>
+                <tr>
+                    <th>পেশা</th>
+                    <td>এআই ডেভেলপার, প্রোগ্রামার,<br>ছাত্র</td>
+                </tr>
+                <tr>
+                    <th>পরিচিতির কারণ</th>
+                    <td>সাইবারসিকিউরিটি, এআই<br>ডেভেলপমেন্ট, প্রোগ্রামিং</td>
+                </tr>
+                <tr>
+                    <th>উচ্চতা</th>
+                    <td>৫ ফুট ৭ ইঞ্চি</td>
+                </tr>
+                <tr>
+                    <th>বাবার নাম</th>
+                    <td>রবীন্দ্র ভট্টাচার্য</td>
+                </tr>
+                <tr>
+                    <th>মায়ের নাম</th>
+                    <td>গৌরী চক্রবর্তী</td>
+                </tr>
+                <tr>
+                    <th>ভাইয়ের নাম</th>
+                    <td>চিরঞ্জন ভট্টাচার্য দিব্য</td>
+                </tr>
+                <tr>
+                    <th>ইমেইল</th>
+                    <td><a href="mailto:chitronbhattacharjee@gmail.com">chitronbhattacharjee@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <th>বায়োগ্রাফি ও রেফারেন্স</th>
+                    <td><a href="http://www.brandchitron.github.com/biograph">বায়োগ্রাফি</a>, <a href="http://bio.link/chitron">রেফারেন্স</a></td>
+                </tr>
+            </table>
         </div>
-        <div id="footer">
-            <a href="index.html">Back to Profile</a>
+
+        <div class="section">
+            <h2>প্রারম্ভিক জীবন <span>▼</span></h2>
+            <div class="section-content">
+                <p>
+                    চিত্রণ ভট্টাচার্য ১৩ অক্টোবর, ২০০৫ সালে দুর্গাপুর, নেত্রকোণা, বাংলাদেশে জন্মগ্রহণ করেন। তার পিতা রবীন্দ্র ভট্টাচার্য এবং মাতা গৌরী চক্রবর্তী। তার এক ভাই আছে, যার নাম চিরঞ্জন ভট্টাচার্য দিব্য। তিনি বর্তমানে ময়মনসিংহ কলেজের একাদশ শ্রেণীর বিজ্ঞান বিভাগের ছাত্র, যা খুব বেশি পরিচিত বা নামকরা নয়।
+                </p>
+            </div>
         </div>
+
+        <div class="section">
+            <h2>শিক্ষা ও কর্মজীবন <span>▼</span></h2>
+            <div class="section-content">
+                <p>
+                    চিত্রণ তার পড়াশোনার পাশাপাশি কম্পিউটার প্রোগ্রামিং শিখছেন। তিনি এআই এবং সাইবারসিকিউরিটির ক্ষেত্রে একাধিক প্রকল্প তৈরি করেছেন। 
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>প্রকল্পসমূহ <span>▼</span></h2>
+            <div class="section-content">
+                <ul>
+                    <li>
+                        <strong>MCA TEAM অ্যাপ:</strong> 
+                        আরিফ ব্রোদের নেতৃত্বাধীন সাইবারসিকিউরিটি দলের জন্য একটি অ্যাপ। <a href="https://apk.e-droid.net/apk/app3245241-yjsrvl.apk?v=1">ডাউনলোড করুন</a>
+                    </li>
+                    <li>
+                        <strong>ব্ল্যাক হান্টার টিম:</strong> 
+                        সাইবারসিকিউরিটি ও এআই ডেভেলপমেন্টে বিশেষজ্ঞদের একটি দল প্রতিষ্ঠা করেছেন।
+                    </li>
+                    <li>
+                        <strong>Oii Shunoo:</strong> 
+                        একটি অ্যাডভান্সড অ্যাপ যা সামাজিক যোগাযোগ মাধ্যম এবং গেমিং প্ল্যাটফর্ম হিসেবে কাজ করে, যেখানে বিভিন্ন গেম এবং ইন্টারেক্টিভ ফিচার রয়েছে। 
+                        <a href="http://www.n9.cl/oii-shunoo">অ্যাপটি ডাউনলোড করতে এখানে ক্লিক করুন</a>. 
+                        <a href="http://www.brandchitron.github.io/Download-Oii-Shunoo">অ্যাপের রেফারেন্স লিঙ্ক</a>.
+                    </li>
+                    <li>
+                        <strong>MKCM পাইলট সরকারী উচ্চ বিদ্যালয়:</strong> 
+                        <a href="http://www.mkcmp.school.gov.bd">বিদ্যালয়ের ওয়েবসাইট</a> তৈরি করেছেন।
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>সামাজিক কার্যক্রম <span>▼</span></h2>
+            <div class="section-content">
+                <p>
+                    চিত্রণ বিভিন্ন সামাজিক কার্যক্রমে অংশগ্রহণ করেন, বিশেষ করে শিক্ষা ও প্রযুক্তির ক্ষেত্রে। তিনি নতুন প্রজন্মের জন্য সাইবারসিকিউরিটি এবং প্রোগ্রামিং শেখানোর চেষ্টা করছেন।
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>ভবিষ্যৎ পরিকল্পনা <span>▼</span></h2>
+            <div class="section-content">
+                <p>
+                    চিত্রণের ভবিষ্যৎ পরিকল্পনা হলো এআই এবং সাইবারসিকিউরিটির ক্ষেত্রে নতুন উদ্ভাবনী প্রযুক্তি তৈরি করা এবং সমাজের উন্নয়নে অবদান রাখা।
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer">
+        <a href="index.html">Back to Profile</a>
     </div>
+
+    <script>
+        document.querySelectorAll('.section h2').forEach(section => {
+            section.addEventListener('click', () => {
+                const content = section.nextElementSibling;
+                content.classList.toggle('active');
+                section.lastChild.textContent = content.classList.contains('active') ? '▲' : '▼';
+            });
+        });
+    </script>
 </body>
 </html>
